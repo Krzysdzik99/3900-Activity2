@@ -79,6 +79,7 @@ SECTION: Photo Slideshow
 .myPhotos {
     display: none;
 }
+.img {vertical-align: middle}
 /*Next and previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -96,7 +97,7 @@ SECTION: Photo Slideshow
 }
 /*Positioning the Next Button to the right*/
 .next {
-    right:0;
+    right: 0;
     border-radius: 3px 0 0 3px;
 }
 
@@ -108,7 +109,7 @@ SECTION: Photo Slideshow
 /*Caption Text Formatting*/
 .slide_text {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     top: 0;

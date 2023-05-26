@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen, projection">
-<link href="main.js">
-<link href="slideshow.js">
+<script src="main.js"></script>
+<script src="slideshow.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -23,17 +23,17 @@
 
 <!-- Photos -->
 <div class="container">
-    <div class="myPhotos">
+    <div class="myPhotos" fade>
         <div class="number_text">1 / 3</div>
         <img src="img/IMG_0059.jpg" style="width: 100%" alt="Undergrad Photo">
         <div class="slide_text">During Undergrad</div>
     </div>
-    <div class="myPhotos">
+    <div class="myPhotos" fade>
         <div class="number_text">2 / 3</div>
         <img src="img/IMG_2689.thumbnail.jpg" style="width: 100%" alt="Friend's Wedding Phot">
         <div class="slide_text">At A Wedding</div>
     </div>
-    <div class="myPhotos">
+    <div class="myPhotos" fade>
         <div class="number_text">3 / 3</div>
         <img src="img/IMG_1267.thumbnail.jpg" style="width: 100%" alt="Studying Abroad Photo">
         <div class="slide_text">Studying Abroad</div>
@@ -41,8 +41,8 @@
 </div>
 
 <!--Next and Previous Buttons -->
-<a class ="prev" onclick="plusSlides(-1)">Prev</a>
-<a class ="next" onclick="plusSlides(+1)">Next</a>
+<a class ="prev" onclick="plusSlides(-1)">&#10094</a>
+<a class ="next" onclick="plusSlides(+1)">&#10095</a>
 <BR>
 
 <!-- Adding in the Dots for navigation -->

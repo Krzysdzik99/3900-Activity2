@@ -14,11 +14,11 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementById("myPhotos");
-    let dots = document.getElementById("dot");
-    if (n> slides.length) {slideIndex = 1}
+    let slides = document.getElementsByClassName("myPhotos");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
-    for (i= 0; i<slides.length; i++) {
+    for (i= 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i= 0; i < dots.length; i++) {
