@@ -30,6 +30,7 @@ SECTION: Navigation Bar
     background-color: cadetblue;
     color:white;
 }
+
 /*
 SECTION: Headers and Paragraphs
 */
@@ -44,9 +45,28 @@ h1 {
     font-size: 40px;
     font-weight: bold;
 }
+/*Header 3*/
+h3 {
+    Font-family: "Helvetica Neue", Helvetica, serif;
+    padding: 5px 0 0 0;
+    font-size: 20px;
+}
+/*Header 5*/
+h5 {
+    font-family: "Helvetica Neue", Helvetica, serif ;
+    font-size: 15px;
+}
+/*Paragraph*/
+p, li {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+
 /*
 SECTION: Scroll Bar Stickiness
  */
+
 /* Page Content */
 .content {
     padding: 16px;
@@ -69,6 +89,7 @@ SECTION: Scroll Bar Stickiness
 /*
 SECTION: Photo Slideshow
  */
+
 *{box-sizing: border-box}
 /* Slideshow Container */
 .container {
@@ -113,7 +134,11 @@ SECTION: Photo Slideshow
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
 }
 /*Number Text */
 .number_text {
@@ -122,6 +147,7 @@ SECTION: Photo Slideshow
     padding: 8px 12px;
     position: absolute;
     top:0;
+    font-family: Arial, sans-serif ;
 }
 /*Formatting the dots for navigation */
 .dot {
@@ -149,4 +175,27 @@ SECTION: Photo Slideshow
 @keyframes fade {
     from {opacity: 0.4}
     to {opacity: 1}
+}
+
+/*
+SECTION: Columns
+*/
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*SECTION: Footer*/
+footer {
+    background-color: darkgray;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: white;
 }
