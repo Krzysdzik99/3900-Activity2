@@ -1,0 +1,37 @@
+/*Adding a dark grey background color to the top navigation */
+.top_nav{
+    background-color: darkgray;
+    overflow: hidden;
+}
+
+/*Adding style to links in nav bar*/
+.top_nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px  16px;
+    text-decoration: NONE;
+    font-family: "Helvetica Neue", Helvetica, serif;
+    font-size: 17px;
+
+}
+
+/*Change the color of links on hover*/
+.top_nav a:hover {
+    background-color: cornsilk;
+    color: black;
+}
+
+/*Add format to the active link*/
+.top_nav a.active {
+    background-color: cadetblue;
+    color:white;
+}
+/* Header 1*/
+.h1 {
+    font-family: "Helvetica Neue", Helvetica, serif;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
