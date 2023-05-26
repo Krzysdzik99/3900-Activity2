@@ -1,3 +1,6 @@
+/*
+SECTION: Navigation Bar
+*/
 /*Adding a dark grey background color to the top navigation */
 .top_nav{
     background-color: darkgray;
@@ -9,11 +12,10 @@
     float: left;
     color: white;
     text-align: center;
-    padding: 14px  16px;
+    padding: 14px;
     text-decoration: NONE;
     font-family: "Helvetica Neue", Helvetica, serif;
     font-size: 17px;
-
 }
 
 /*Change the color of links on hover*/
@@ -27,6 +29,10 @@
     background-color: cadetblue;
     color:white;
 }
+/*
+SECTION: Headers and Paragraphs
+*/
+
 /* Header 1*/
 .h1 {
     font-family: "Helvetica Neue", Helvetica, serif;
@@ -34,4 +40,111 @@
     padding: 5px 0 0 0;
     width: 100%;
     text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+/*
+SECTION: Scroll Bar Stickiness
+ */
+/* Page Content */
+.content {
+    padding: 16px;
+}
+
+/* The sticky class is added to the navbar with the JS when scrolling */
+/* I just learned how to do this on W3 Schools :) */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Adding top padding to prevent sudden quick movement */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/*
+SECTION: Photo Slideshow
+ */
+*{box-sizing: border-box}
+/* Slideshow Container */
+.container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* Hide the photos on default */
+.myPhotos {
+    display: none;
+}
+/*Next and previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: White;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/*Positioning the Next Button to the right*/
+.next {
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover add black background to next and prev */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*Caption Text Formatting*/
+.slide_text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/*Number Text */
+.number_text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top:0;
+}
+/*Formatting the dots for navigation */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Active Dot hover */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/*Fading Animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
 }
