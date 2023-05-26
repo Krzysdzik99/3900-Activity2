@@ -30,6 +30,28 @@ SECTION: Navigation Bar
     background-color: cadetblue;
     color:white;
 }
+/*
+SECTION: Scroll Bar Stickiness
+ */
+
+/* Page Content */
+.content {
+    Padding: 16px;
+}
+
+/* The sticky class is added to the navbar with the JS when scrolling */
+/* I just learned how to do this on W3 Schools :) */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Adding top padding to prevent sudden quick movement */
+.sticky + .content {
+    padding-top: 60px;
+}
 
 /*
 SECTION: Headers and Paragraphs
@@ -60,30 +82,6 @@ h5 {
 p, li {
     font-family: Arial, sans-serif;
     font-size: 15px;
-}
-
-
-/*
-SECTION: Scroll Bar Stickiness
- */
-
-/* Page Content */
-.content {
-    padding: 16px;
-}
-
-/* The sticky class is added to the navbar with the JS when scrolling */
-/* I just learned how to do this on W3 Schools :) */
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-/* Adding top padding to prevent sudden quick movement */
-.sticky + .content {
-    padding-top: 60px;
 }
 
 /*
