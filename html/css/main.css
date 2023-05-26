@@ -11,6 +11,7 @@ SECTION: Navigation Bar
 .top_nav a {
     float: left;
     color: white;
+    display: block;
     text-align: center;
     padding: 14px;
     text-decoration: NONE;
@@ -34,7 +35,7 @@ SECTION: Headers and Paragraphs
 */
 
 /* Header 1*/
-.h1 {
+h1 {
     font-family: "Helvetica Neue", Helvetica, serif;
     margin: 0 0 30px 0;
     padding: 5px 0 0 0;
